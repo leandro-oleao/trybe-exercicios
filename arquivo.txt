@@ -8,3 +8,4 @@ O que eu vou aprender na Trybe:
 - Programação Front End
 - Programação Back End
 - Iniciação em Ciência da Computação
+- Soft Skills
