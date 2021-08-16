@@ -1,0 +1,10 @@
+O que eu vou aprender na Trybe:
+
+- Unix
+- Bash
+- Git
+- HTML
+- CSS
+- Programação Front End
+- Programação Back End
+- Iniciação em Ciência da Computação
