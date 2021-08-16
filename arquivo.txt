@@ -5,5 +5,7 @@ O que eu vou aprender na Trybe:
 - Git
 - HTML
 - CSS
+- Programação Front End
+- Programação Back End
+- Iniciação em Ciência da Computação
 - Soft Skills
-- Programação Front End - Back End
