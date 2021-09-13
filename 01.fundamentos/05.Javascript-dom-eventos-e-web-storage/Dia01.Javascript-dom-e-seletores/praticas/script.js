@@ -19,5 +19,3 @@ for (i = 0; i < notUrgentTasks.length; i += 1) {
 
 let footColor = document.getElementById('footer-container');
 footColor.style.background = "#004400";
-
-
