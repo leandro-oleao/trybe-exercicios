@@ -44,16 +44,28 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
+let buttonContainer = document.querySelector('.buttons-container');
+let holidayButton = document.createElement('button');
+
 function createHolidays(feriados) {
   feriados = "Feriados"
-  let buttonContainer = document.querySelector('.buttons-container');
-  
-  let holidayButton = document.createElement('button');
-  holidayButton.className = 'btn-holiday';
+
+  holidayButton.id = 'btn-holiday';
   holidayButton.innerHTML = feriados;
 
   buttonContainer.appendChild(holidayButton);
-
 }
 
 createHolidays();
+
+holidayButton.addEventListener('click',function () {
+  let holidayColored = document.querySelectorAll('.holiday');
+
+  for (let i = 0; i < holidayColored.length; i += 1) {
+  if (holidayColored[i].style.background === 'green') {
+    holidayColored[i].style.background = 'rgb(238,238,238)';
+  } else {
+    holidayColored[i].style.background = 'green'    
+  }
+}
+})
