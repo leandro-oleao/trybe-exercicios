@@ -24,6 +24,19 @@
     colorElement.style.color = "green"
     let textPrimeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
     textPrimeiroFilhoDoFilho.innerText = "Leandro de Oliveira Leão";
+    
+    let sectionPai = document.getElementById('pai');
+    let quintoFilho = document.createElement('div');
+    sectionPai.appendChild(quintoFilho);
+
+    let sectionChild = document.querySelector('#elementoOndeVoceEsta');
+    let filhoElemento = document.createElement('div');
+    sectionChild.appendChild(filhoElemento);
+
+    let sectionChildOfChild = document.querySelector('#primeiroFilhoDoFilho');
+    let filhoDoFilho = document.createElement('span');
+    sectionChildOfChild.appendChild(filhoDoFilho);
+
   </script>
 </body>
 </html>
