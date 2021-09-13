@@ -26,16 +26,27 @@
     textPrimeiroFilhoDoFilho.innerText = "Leandro de Oliveira Leão";
     
     let sectionPai = document.getElementById('pai');
-    let quintoFilho = document.createElement('div');
+    let quintoFilho = document.createElement('section');
     sectionPai.appendChild(quintoFilho);
 
     let sectionChild = document.querySelector('#elementoOndeVoceEsta');
-    let filhoElemento = document.createElement('div');
+    let filhoElemento = document.createElement('section');
     sectionChild.appendChild(filhoElemento);
+    filhoElemento.className = 'filhoDoElemento';
 
     let sectionChildOfChild = document.querySelector('#primeiroFilhoDoFilho');
-    let filhoDoFilho = document.createElement('span');
+    let filhoDoFilho = document.createElement('section');
     sectionChildOfChild.appendChild(filhoDoFilho);
+    filhoDoFilho.id = "filhoDoFilho";
+    
+    let paiDoPaiElements = document.getElementById('paiDoPai');
+    let elements = document.querySelectorAll('#paiDoPai section');
+    for (let i = 0; elements.length; i += 1) {
+      let elementItem = elements[i];
+      if ( elementItem.id.includes('Filho')) {
+        paiDoPaiElements.removeChild(elementItem);
+      }
+    }
 
   </script>
 </body>
