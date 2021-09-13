@@ -57,10 +57,11 @@
   </head>
   <body>
     <script>
-      // Exercício 01
+      // Exercício 01 + Alteração 01
       let bodyInitial = document.querySelector('body');
       let mainTitle = document.createElement('h1');
       mainTitle.innerText = 'Exercício 5.2 - JavaScript DOM';
+      mainTitle.className = 'title';
       bodyInitial.appendChild(mainTitle);
       // Exercícico 02
       let mainContent = document.createElement('main');
@@ -90,18 +91,36 @@
       // Exercício 08
       let numberList = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
       let unorderedList = document.createElement('ul');
-      
+
       for (let i = 0; i < numberList.length; i += 1) {
         let list = document.createElement('li');
         list.innerText = numberList[i];
+        list.className = 'listaNumerada'
         unorderedList.appendChild(list);
       }
       sectionRight.appendChild(unorderedList);
-      // Exercicio 09
+      // Exercicio 09 + Alteração 02
       for (let i = 1; i < 4; i += 1) {   
       let NewTag = document.createElement('h3');
+      NewTag.className = 'description';
       mainContent.appendChild(NewTag);
       }
+      // Alteração 03
+      mainContent.removeChild(sectionLeft);
+      // Alteração 04
+      sectionRight.style.marginRight = 'auto';
+      // Alteração 05
+      section1.style.background = 'green';
+      // Alteração 06
+      let checkList = document.getElementsByClassName('listaNumerada');
+      for (let i = 0; i < checkList.length; i += 1) {
+        if ( checkList[i].innerText.includes('nove')) {
+        unorderedList.removeChild(checkList[i]);
+        }
+        if ( checkList[i].innerText.includes('dez')) {
+        unorderedList.removeChild(checkList[i]);
+        }
+      }          
     </script>
   </body>
 </html>
